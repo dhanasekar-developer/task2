@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: rgb(230, 228, 228);
+    overflow-x: hidden;
+}
+
+.dashTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashTop>input[type='text'] {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 35px;
+    padding: 0 10px;
+
+}
+
+.refImages {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(280px, 1fr));
+    margin: 20px 0;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+@media all and (max-width:1350px) {
+    .refImages {
+        grid-template-columns: repeat(2, minmax(280px, 1fr));
+    }
+}
+
+@media all and (max-width:720px) {
+    .refImages {
+        grid-template-columns: repeat(1, minmax(280px, 1fr));
+    }
+}
+
+.refImage {
+    height: 130px;
+    width: 280px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.refImagesSection {
+    display: flex;
+    justify-content: center;
+}
+
+.refImage>img {
+    height: 80%;
+    width: 100px;
+    display: flex;
+    padding-top: 15px;
+    border-radius: 30px;
+}
+
+.imgContent {
+    padding: 10px;
+    padding-top: 30px !important;
+}
+
+.decreaseArrow {
+    color: red;
+}
+
+.increaseArrow {
+    color: green;
+}
+
+.overviewSection {
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.overview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overviewChart {
+    width: 500px;
+}
+
+@media all and (max-width:660px) {
+    .overviewChart {
+        width: 250px;
+    }
+
+    .refImage {
+        width: 230px;
+    }
+
+    .refImages {
+        margin: 20px auto;
+
+    }
+
+    .refImage>img {
+        height: 70px;
+        width: 70px;
+        padding-top: 40px;
+    }
+
+    .overviewSection {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+.overviewChart>img {
+    width: 100%;
+}
+
+
+.customers {
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.holeOverviewSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media all and (max-width:400px) {
+    .customers {
+        width: 200px;
+        height: 250px;
+    }
+
+    .customers>img {
+        height: 200px;
+    }
+
+    .overviewChart {
+        width: 200px;
+    }
+
+    .holeOverviewSection {
+        width: 220px;
+        margin: 0 auto;
+    }
+}
